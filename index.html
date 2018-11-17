@@ -5,8 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>kimc159</title>
+    <link rel="stylesheet" href="common/css/reset.css" />
+    <link rel="stylesheet" href="common/css/layout.css" />
+    <link rel="stylesheet" href="common/css/style.css" />
+    <style>
+    #gnb {width:100%; min-height:50px; padding: 0 10px; border-bottom: 1px solid #ededed; -webkit-box-sizing: border-box; box-sizing: border-box;}
+    #gnb .gnb_inner {width:100%; height: 100%;}
+    #gnb .gnb_inner:after {content:""; display:block; clear:both;}
+    #gnb .gnb_inner .gnb_left_area {float: left;}
+    #gnb .gnb_inner .gnb_left_area .gnb_brand a{ display: block; padding:16px; color: #666; -webkit-box-sizing: border-box; box-sizing: border-box; }
+    #gnb .gnb_inner .gnb_right_area {float: right;}
+    #gnb .gnb_inner .gnb_right_area .menu_right_area { height: 100%; font-size:0;}
+    #gnb .gnb_inner .gnb_right_area .menu_right_area .menu_item {display:inline-block; vertical-align: top; height: 100%; font-size: 20px; }
+    #gnb .gnb_inner .gnb_right_area .menu_right_area .menu_item .menu_item_link { display: block; color:#666; padding: 17px 16px; -webkit-box-sizing: border-box; box-sizing: border-box; }
+    #gnb .gnb_inner .gnb_right_area .menu_right_area .menu_item.active .menu_item_link { position:relative; color:#59abe3;}
+    #gnb .gnb_inner .gnb_right_area .menu_right_area .menu_item.active .menu_item_link:after {content:''; position:absolute; left:0; bottom:-1px; width:100%; height:2px; background-color:#59abe3;}
+    </style>
+    <!--[if lt IE 9]> 
+        <script>
+            document.createElement('nav');
+        </script>
+    <![endif]-->
 </head>
 <body>
-    <h2>hello github</h2>
+    <nav id="gnb">
+        <div class="gnb_inner">
+            <div class="gnb_left_area">
+                <h1 class="gnb_brand"><a href="index.html">kimc159</a></h1>
+            </div>
+            <div class="gnb_right_area">
+                <ul class="menu_right_area">
+                    <li class="menu_item active">
+                        <a class="menu_item_link" href="index.html">Home</a>
+                    </li>
+                    <li class="menu_item">
+                        <a class="menu_item_link" href="example.html">example</a>
+                    </li>
+                    <li class="menu_item">
+                        <a class="menu_item_link" href="resume.html">resume</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <script src="common/js/script.js"></script>
 </body>
 </html>
